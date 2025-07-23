@@ -1,5 +1,5 @@
 public class AssignmentOne {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //1.Anna  18  82  76
         //2.Bob   19  96  65
         //3.Candy 19  88  80
@@ -17,27 +17,27 @@ public class AssignmentOne {
         double[] totalScores = new double[numOfStudents];//本来写的3，但是想起来要用变量名替代，便回去写了两个大小
         double[] averageScores = new double[numOfStudents];
         char[] scoreLevels = new char[numOfStudents];
-        for(int i = 0; i < numOfStudents; i++){
+        for (int i = 0; i < numOfStudents; i++) {
             totalScores[i] = mathScores[i] + chineseScores[i];
             averageScores[i] = totalScores[i] / numOfSubjects;
-            if(averageScores[i] >= 90){
+            if (averageScores[i] >= 90) {
                 scoreLevels[i] = 'A';
-            }else if(averageScores[i] >= 80){
+            } else if (averageScores[i] >= 80) {
                 scoreLevels[i] = 'B';
-            }else if(averageScores[i] >= 70){
+            } else if (averageScores[i] >= 70) {
                 scoreLevels[i] = 'C';
-            }else if(averageScores[i] >= 60){
+            } else if (averageScores[i] >= 60) {
                 scoreLevels[i] = 'D';
-            }else{
+            } else {
                 scoreLevels[i] = 'F';
             }
         }
 
         //输出每位学生的姓名，年龄，数学成绩，语文成绩，总成绩,平均成绩和等级
-        for(int j = 0; j < numOfStudents; j++){
+        for (int j = 0; j < numOfStudents; j++) {
             System.out.println("Name: " + studentNames[j] + " ," +
                                 "Age: " + studentAges[j] + " ," +
-                                "MathScore: " + mathScores[j] + " ,"+
+                                "MathScore: " + mathScores[j] + " ," +
                                 "ChineseScore: " + chineseScores[j] + " ," +
                                 "TotalScore: " + totalScores[j] + " ," +
                                 "AverageScore: " + averageScores[j] + " ," +
@@ -54,32 +54,32 @@ public class AssignmentOne {
 //        }
 
         //注意在java中不能使用！和==比较字符串内容，注意equal返回ture/false
-        while(!studentNames[targetIndex].equals("Candy")) {//等于的时候满足条件跳出循环，等于的时候为false
+        while (!studentNames[targetIndex].equals("Candy")) {//等于的时候满足条件跳出循环，等于的时候为false
             targetIndex++;
         }
 
         mathScores[targetIndex] = 98;
         totalScores[targetIndex] = mathScores[targetIndex] + chineseScores[targetIndex];
         averageScores[targetIndex] = totalScores[targetIndex] / numOfSubjects;
-       if (averageScores[targetIndex] >= 90){
-           scoreLevels[targetIndex] ='A';
-       }else if(averageScores[targetIndex] >= 80){
-           scoreLevels[targetIndex] = 'B';
-       }else if(averageScores[targetIndex] >= 70){
-           scoreLevels[targetIndex] = 'C';
-       }else if(averageScores[targetIndex] >= 60){
-           scoreLevels[targetIndex] = 'D';
-       }else{
-           scoreLevels[targetIndex] = 'F';
-       }
+        if (averageScores[targetIndex] >= 90) {
+            scoreLevels[targetIndex] = 'A';
+        } else if (averageScores[targetIndex] >= 80) {
+            scoreLevels[targetIndex] = 'B';
+        } else if (averageScores[targetIndex] >= 70) {
+            scoreLevels[targetIndex] = 'C';
+        } else if (averageScores[targetIndex] >= 60) {
+            scoreLevels[targetIndex] = 'D';
+        } else {
+            scoreLevels[targetIndex] = 'F';
+        }
         System.out.println("....................After Change...............................");
         System.out.println("Name: " + studentNames[targetIndex] + " ," +
-                "Age: " + studentAges[targetIndex] + " ," +
-                "MathScore: " + mathScores[targetIndex] + " ,"+
-                "ChineseScore: " + chineseScores[targetIndex] + " ," +
-                "TotalScore: " + totalScores[targetIndex] + " ," +
-                "AverageScore: " + averageScores[targetIndex] + " ," +
-                "ScoreLevel: " + scoreLevels[targetIndex]);
+                            "Age: " + studentAges[targetIndex] + " ," +
+                            "MathScore: " + mathScores[targetIndex] + " ," +
+                            "ChineseScore: " + chineseScores[targetIndex] + " ," +
+                            "TotalScore: " + totalScores[targetIndex] + " ," +
+                            "AverageScore: " + averageScores[targetIndex] + " ," +
+                            "ScoreLevel: " + scoreLevels[targetIndex]);
 
 
     }
