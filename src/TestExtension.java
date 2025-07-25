@@ -1,5 +1,5 @@
 public class TestExtension {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        Animal dog = new Dog("旺财");
 //        Animal cat = new Cat("小咪");
 //        dog.eat();//父类的方法但被重写
