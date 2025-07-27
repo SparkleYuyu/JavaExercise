@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class Fish implements Speak {
     @Override
     public void researchLanguage() {

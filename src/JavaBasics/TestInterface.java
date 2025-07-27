@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class TestInterface {
     public static void main(String[] args) {
         Speak bird = new Bird();
