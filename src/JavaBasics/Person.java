@@ -11,6 +11,10 @@ public class Person {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "Person: " + name + ", age: " + age;
+    }
 
     //name的Getter方法
     public String getName(){
@@ -22,6 +26,10 @@ public class Person {
         this.name = name;
     }
 
+    public static void main(String[] args) {
+        Person p = new Person("James", 18);
+        System.out.println(p.toString());
 
+    }
 
 }
