@@ -1,5 +1,7 @@
 package Assignment;
 
+import JavaBasics.Student;
+
 /**
  * 面向对象拓展:用面向对象的思路完成对简易学生管理系统的设计
  * 简易学生管理系统 请使用Java语言开发一个简易学生成绩管理系统，具体要求如下：
@@ -22,13 +24,15 @@ public class AssignmentTwo {
 
         //输出学生信息
         for (int i = 0; i < StudentII.NUM_OF_STUDENTS; i++) {
-            System.out.println("Name: " + studentsInfo[i].name + "  " +
-                    "Age: " + studentsInfo[i].age + "  " +
-                    "MathScore: " + studentsInfo[i].matchScore + "  " +
-                    "ChineseScore: " + studentsInfo[i].chineseScore + "  " +
-                    "TotalScore: " + studentsInfo[i].totalScore + "  " +
-                    "AverageScore: " + studentsInfo[i].averageScore + "  " +
-                    "ScoreLevel: " + studentsInfo[i].scoreLevel);
+//            System.out.println("Name: " + studentsInfo[i].name + "  " +
+//                    "Age: " + studentsInfo[i].age + "  " +
+//                    "MathScore: " + studentsInfo[i].matchScore + "  " +
+//                    "ChineseScore: " + studentsInfo[i].chineseScore + "  " +
+//                    "TotalScore: " + studentsInfo[i].totalScore + "  " +
+//                    "AverageScore: " + studentsInfo[i].averageScore + "  " +
+//                    "ScoreLevel: " + studentsInfo[i].scoreLevel);
+            //使用重写的toString()
+            System.out.println(studentsInfo[i]);
         }
 
         System.out.println("............................After change..................................");
@@ -48,13 +52,15 @@ public class AssignmentTwo {
         studentsInfo[targetIndex].getAverageScore();
         studentsInfo[targetIndex].getScoreLevel();
 
-        System.out.println("Name: " + studentsInfo[targetIndex].name + "  " +
-                "Age: " + studentsInfo[targetIndex].age + "  " +
-                "MathScore: " + studentsInfo[targetIndex].matchScore + "  " +
-                "ChineseScore: " + studentsInfo[targetIndex].chineseScore + "  " +
-                "TotalScore: " + studentsInfo[targetIndex].totalScore + "  " +
-                "AverageScore: " + studentsInfo[targetIndex].averageScore + "  " +
-                "ScoreLevel: " + studentsInfo[targetIndex].scoreLevel);
+//        System.out.println("Name: " + studentsInfo[targetIndex].name + "  " +
+//                "Age: " + studentsInfo[targetIndex].age + "  " +
+//                "MathScore: " + studentsInfo[targetIndex].matchScore + "  " +
+//                "ChineseScore: " + studentsInfo[targetIndex].chineseScore + "  " +
+//                "TotalScore: " + studentsInfo[targetIndex].totalScore + "  " +
+//                "AverageScore: " + studentsInfo[targetIndex].averageScore + "  " +
+//                "ScoreLevel: " + studentsInfo[targetIndex].scoreLevel);
+        //使用重写的toString()
+        System.out.println(studentsInfo[targetIndex]);
 
     }
 }

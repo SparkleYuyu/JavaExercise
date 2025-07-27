@@ -60,5 +60,15 @@ public class StudentII {
             scoreLevel = 'F';
         }
     }
+    @Override
+    public String toString() {
+        return "Name: " + name + "  " +
+                "Age: " + age + "  " +
+                "MathScore: " + matchScore + "  " +
+                "ChineseScore: " + chineseScore + "  " +
+                "TotalScore: " + totalScore + "  " +
+                "AverageScore: " + averageScore + "  " +
+                "ScoreLevel: " + scoreLevel;
+    }
 
 }
