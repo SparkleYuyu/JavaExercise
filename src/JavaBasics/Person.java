@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class Person {
     //成员变量（属性）
     private String name;

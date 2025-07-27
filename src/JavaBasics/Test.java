@@ -1,6 +1,8 @@
+package JavaBasics;
+
 public class Test {
     public static void main(String[] args){
-        System.out.println("Hello Test!");
+        System.out.println("Hello JavaBasics.Test!");
         Person p = new Person("Jack", 18);
         //p.setName("Jack");
         System.out.println(p.getName());

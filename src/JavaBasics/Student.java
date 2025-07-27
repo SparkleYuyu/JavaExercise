@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class Student {
     static int totalStudents;
     String name;
@@ -9,7 +11,7 @@ public class Student {
 
     //静态方法
     public static void print(){
-        System.out.println("This is a static method of Student");
+        System.out.println("This is a static method of JavaBasics.Student");
     }
 
     public static void main(String[] args){
