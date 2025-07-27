@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class ArrayAndString {
     public static void main(String[] args){
         System.out.println("Array And String");
