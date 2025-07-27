@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public  abstract  class Animal {
     String name;
     public Animal(String name){

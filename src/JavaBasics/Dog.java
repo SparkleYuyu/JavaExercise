@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class Dog extends Animal {
     public Dog(String name) {
         super(name); //调用父类的构造方法
