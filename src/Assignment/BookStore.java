@@ -31,7 +31,7 @@ public class BookStore {
             //但我们想要的是没有这个键，那么就返回0，因为这本书在库存里面存在只是没有卖出
             int newSales = bookSales.getOrDefault(isbn, 0) + sales;
             bookSales.put(isbn, newSales);
-            updateTop3(isbn);
+            updateTop3();
         } else { //库存里面没有这本书
             System.out.println("Error ISBN");
         }
@@ -39,7 +39,7 @@ public class BookStore {
     }
 
     //更新书的畅销榜前三
-    private void updateTop3(String isbn) {
+    private void updateTop3() {
         //将所有的键值对Map Entry转化成List
         List<Map.Entry<String, Integer>> tempSalesList = new ArrayList<>(bookSales.entrySet());//回忆起来当时for-entrySet，()里面是初始化这个List内容
 
@@ -65,7 +65,7 @@ public class BookStore {
         //清空旧列表的前三名
         salesTop3.clear();
 
-        //增加新的前三名,先找到book
+        //填写新的前三名,先找到book
         int count = Math.min(3, tempSalesList.size());  // 防止越界
         for(int k = 0; k < count; k++) {
             String tempKey = tempSalesList.get(k).getKey();
@@ -85,6 +85,7 @@ public class BookStore {
         System.out.println("..................................................");
 
     }
+
 
     //快排
     private void quickSort(List<Map.Entry<String, Integer>> list, int left, int right) {
